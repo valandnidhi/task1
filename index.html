@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form1">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form1">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form1">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form1">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <div class="form1">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form1">
+                <label>Gender</label>
+                <label for="male"><input type="radio" id="male" name="gender" value="Male"> Male</label>
+                <label for="female"><input type="radio" id="female" name="gender" value="Female"> Female</label>
+                <label for="other"><input type="radio" id="other" name="gender" value="Other"> Other</label>
+            </div>
+
+            <div class="form1">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="IN">India</option>
+                    <option value="AFRIKA">Afrika</option>
+                    <option value="UK">UK</option>
+                    <option value="CA">Canada</option>
+                </select>
+            </div>
+
+            <div class="form1">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required> I agree to the Terms & Conditions
+                </label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
